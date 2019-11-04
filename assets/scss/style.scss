@@ -1,0 +1,21 @@
+section {
+    h1 {
+        color: rgb(44, 136, 136);
+    }
+
+    i {
+        color: rgb(53, 175, 175);
+    }
+}
+
+
+/* label focus color */
+.input-field input[type=text]:focus+label {
+    color: rgb(255, 28, 28);
+}
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+    border-bottom: 1px solid #000;
+    box-shadow: 0 1px 0 0 #000;
+}

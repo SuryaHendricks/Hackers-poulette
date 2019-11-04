@@ -1,0 +1,14 @@
+section h1 {
+  color: #2c8888; }
+
+section i {
+  color: #35afaf; }
+
+/* label focus color */
+.input-field input[type=text]:focus + label {
+  color: #ff1c1c; }
+
+/* label underline focus color */
+.input-field input[type=text]:focus {
+  border-bottom: 1px solid #000;
+  box-shadow: 0 1px 0 0 #000; }
