@@ -1,3 +1,5 @@
+<?php include('form.php');
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -21,17 +23,20 @@
 
 <body>
   <section class="section container" id="contact">
-    <h1>Contact us!</h1>
+    <img src="/hackers-poulette/assets/img/hackers-poulette-logo.png" alt="hackers poulette">
+    <h1>Contact the company!</h1>
 
-    <form method="post" action="form.php" class="col s12" data-submit-empty="false">
+    <form method="post" action="index.php" class="col s12">
       <div class="row">
         <div class="input-field col s6">
-          <input name="first_name" id="first_name" type="text" class="validate">
+          <input name="first_name" id="first_name" value="<?= $first_name ?>" type="text" class="validate">
           <label for="first_name">First Name</label>
+          <span class="error"><?= $first_name_error ?></span>
         </div>
         <div class="input-field col s6">
-          <input name="last_name" id="last_name" type="text" class="validate">
+          <input name="last_name" id="last_name" value="<?= $last_name ?>" type="text" class="validate">
           <label for="last_name">Last Name</label>
+          <span class="error"><?= $last_name_error ?></span>
         </div>
       </div>
       <p>
@@ -47,15 +52,17 @@
           <span>Femalle</span>
         </label>
       </p>
+      <span class="error"><?= $gender_error ?></span>
 
       <div class="row">
         <div class="col s6">
 
           <div class="input-field inline">
             <i class="material-icons prefix">contact_mail</i>
-            <input name="mail" id="email_inline" type="email" class="validate">
+            <input name="mail" id="email_inline" type="email" value="<?= $mail ?>" class="validate">
             <label for="email_inline">Email</label>
-            <span class="helper-text" data-error="wrong" data-success="right">abcdef@gmail.com</span>
+            <span class="helper-text" data-error="wrong" data-success="right"></span>
+            <span class="error"><?= $mail_error ?></span>
           </div>
         </div>
 
@@ -63,14 +70,15 @@
 
           <div class="input-field col s12">
             <i class="material-icons prefix">location_on</i>
-            <input name="country" type="text" id="autocomplete-input" class="autocomplete">
+            <input name="country" type="text" id="autocomplete-input" class="autocomplete" value="<?= $country ?>">
             <label for="autocomplete-input">Choose your country</label>
+            <span class="error"><?= $country_error ?></span>
 
           </div>
         </div>
       </div>
       <div class="row">
-        <div class="input-field col s6">
+        <div class="input-field col s3">
           <i class="material-icons prefix">list</i>
           <select name="subject">
             <option value="other">Other</option>
@@ -78,20 +86,22 @@
             <option value="technical">Technical</option>
           </select>
           <label>Chose your subject</label>
+          <span class="error"><?= $subject_error ?></span>
+        </div>
+
+
+
+
+
+        <div class="input-field col s9">
+          <i class="material-icons prefix">create</i>
+          <textarea name="message" id="textarea1" value="<?= $message ?>" class="materialize-textarea"></textarea>
+          <label for="textarea1">Let us know what you need</label>
+          <span class="error"><?= $message_error ?></span>
         </div>
       </div>
 
-      <div class="row">
 
-        <div class="row">
-          <div class="input-field col s12">
-            <i class="material-icons prefix">create</i>
-            <textarea name="message" id="textarea1" class="materialize-textarea"></textarea>
-            <label for="textarea1">Let us know what you need</label>
-          </div>
-        </div>
-
-      </div>
 
       <button class="btn waves-effect waves-light" type="submit" name="submit">Submit
         <i class="material-icons right">send</i>
@@ -106,54 +116,3 @@
 </body>
 
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-<!-- <form method="get" action="index.php" >
-        <p><label for="firstname">Prénom : </label>
-            <input type="text" name="firstname" placeholder="Jaques"></p>
-        <p><label for="lastname">Nom de famille : </label>   
-            <input type="text" name="lastname" placeholder="Dupont"></p>
-        <p><label for="genre">Genre : </label><br>
-            <input type="radio" name="genre" value="homme">Homme 
-            <input type="radio" name="genre" value="femme">Femme</p>
-        <p><label for="mail">Adresse mail : </label>
-            <input type="email" name="mail" placeholder="abcdef@gmail.com"></p>
-        <p><label for="country">Choisissez votre pays : </label>
-            <select name="country" id="">
-                <option value="belgique">belgique</option>
-                <option value="france">France</option>
-                <option value="italie">Italie</option>
-                <option value="espagne">Espagne</option>
-                <option value="portugual">Portugual</option>
-                <option value="hollande">Hollande</option>
-                <option value="allemagne">Allemagne</option>
-                <option value="autriche">Autriche</option>
-                <option value="suisse">Suisse</option>
-                <option value="luxembourg">Luxembourg</option>
-                <option value="grece">Grèce</option>
-            </select></p>
-        <p><label for="sujet">Quel est votre sujet ? </label>
-            <select name="sujet" id="">
-                <option value="autre">Autre</option>
-                <option value="fonction">Fonctionnalités</option>
-                <option value="remboursement">Remboursement</option>
-            </select></p>
-            <p><label for="story">Laissez nous un message :</label><br>
-                <textarea id="" name="story"rows="5" cols="33" placeholder="Votre message...">
-        
-                </textarea></p>
-            <p><input type="submit" value="Confirmer"></p>
-
-        
-
-    </form> -->

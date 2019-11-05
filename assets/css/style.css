@@ -1,14 +1,31 @@
-section h1 {
-  color: #2c8888; }
+@font-face {
+  font-family: 'bellotaregular';
+  src: url("Bellotaregular-webfont.eot");
+  src: url("Bellotaregular-webfont.eot?iefix") format("eot"), url("Bellotaregular-webfont.woff") format("woff"), url("Bellotaregular-webfont.ttf") format("truetype"), url("Bellotaregular-webfont.svg#bellotaregular") format("svg"); }
 
-section i {
-  color: #35afaf; }
+body {
+  width: 100%;
+  padding-top: 30px;
+  background-color: #bfdfdd; }
 
-/* label focus color */
-.input-field input[type=text]:focus + label {
-  color: #ff1c1c; }
+html {
+  font-family: 'bellotaregular'; }
 
-/* label underline focus color */
-.input-field input[type=text]:focus {
-  border-bottom: 1px solid #000;
-  box-shadow: 0 1px 0 0 #000; }
+.error {
+  color: red; }
+
+section {
+  padding: 40px;
+  margin-top: 20px;
+  background-color: #fcf9f9;
+  box-shadow: 5px 5px 5px #011f17; }
+  section img {
+    width: 20%; }
+  section h1 {
+    margin-top: 0;
+    margin-bottom: 0;
+    color: #35afaf;
+    text-align: center;
+    font-family: 'Lobster', cursive; }
+  section i {
+    color: #35afaf; }
