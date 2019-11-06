@@ -1,12 +1,12 @@
 @font-face {
   font-family: 'bellotaregular';
-  src: url("Bellotaregular-webfont.eot");
-  src: url("Bellotaregular-webfont.eot?iefix") format("eot"), url("Bellotaregular-webfont.woff") format("woff"), url("Bellotaregular-webfont.ttf") format("truetype"), url("Bellotaregular-webfont.svg#bellotaregular") format("svg"); }
+  src: url("/assets/font/Bellotaregular-webfont.eot");
+  src: url("/assets/font/Bellotaregular-webfont.eot?iefix") format("eot"), url("/assets/font/Bellotaregular-webfont.woff") format("woff"), url("/assets/font/Bellotaregular-webfont.ttf") format("truetype"), url("/assets/font/Bellotaregular-webfont.svg#bellotaregular") format("svg"); }
 
 body {
-  width: 100%;
   padding-top: 30px;
-  background-color: #bfdfdd; }
+  background-color: #8eb9ae;
+  font-family: 'bellotaregular'; }
 
 html {
   font-family: 'bellotaregular'; }
@@ -26,6 +26,6 @@ section {
     margin-bottom: 0;
     color: #35afaf;
     text-align: center;
-    font-family: 'Lobster', cursive; }
+    font-family: 'bellotaregular'; }
   section i {
     color: #35afaf; }
