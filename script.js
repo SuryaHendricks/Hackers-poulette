@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Autocompletion for countries
+    // Autocompletion
     const ac = document.querySelector(".autocomplete");
     M.Autocomplete.init(ac, {
         data: {
