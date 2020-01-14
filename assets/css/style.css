@@ -6,7 +6,11 @@
 body {
   padding-top: 30px;
   background-color: #8eb9ae;
-  font-family: 'bellotaregular'; }
+  font-family: 'bellotaregular'; 
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+}
 
 html {
   font-family: 'bellotaregular'; }
@@ -29,3 +33,25 @@ section {
     font-family: 'bellotaregular'; }
   section i {
     color: #35afaf; }
+
+.test {
+  text-align: center; }
+
+.success{
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: rgb(81, 255, 0);
+  border: 1px solid black;
+  align-self: center;
+  padding: 0 5px 0 5px;
+  background-color: #fff;
+}
+.fail{
+  margin-top: 10px;
+  font-size: 1.3em;
+  color: red;
+  border: 1px solid black;
+  align-self: center;
+  padding: 0 5px 0 5px;
+  background-color: #fff;
+}

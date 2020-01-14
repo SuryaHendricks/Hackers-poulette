@@ -51,9 +51,10 @@ function sendmail($sub, $mb)
 
 
         $mail->send();
-        echo '   Message has been sent';
+        echo '<div class="success">Message has been sent</div>';
+    
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "<div class='fail'>Message could not be sent. Mailer Error: {$mail->ErrorInfo}</div>";
     }
 } // fin fonction send mail
 
@@ -93,6 +94,6 @@ function sendmailtoclient($clmsg, $m)
         $mail->send();
         echo '';
     } catch (Exception $e) {
-        echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
+        echo "";
     }
 }

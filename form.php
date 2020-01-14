@@ -60,7 +60,9 @@ if (isset($_POST['submit'])) {
     ) {
         sendmail($subject, $messageBody);
         sendmailtoclient($clientMsg, $mail);
+
     }
+
 }
 
 
