@@ -5,19 +5,15 @@
 
 Description
 ----
-
+Contact form 
 
 Technologies
 ----
-*GraphQL*, *NodeJS*, *Express*, *MongoDB*, *JSW*
+*Html*, *SASS*, *Materialize*, *PHP*, *Composer"*, *Docker* 
 
-How to run the projet
+What can you do
 ----
 
-1. Clone the repository.
-
-2. Launch the terminal from the project's root folder and type **npm run dev**.
-
-3. Navigate to http://localhost:5000/graphql. 
-
-What can you do?
+* Complete form
+* Send mail to admin with form informations
+* Send noreply mail to user 
