@@ -9,7 +9,7 @@ Contact form
 
 Technologies
 ----
-*Html*, *SASS*, *Materialize*, *PHP*, *Composer"*, *Docker* 
+*Html*, *SASS*, *Materialize*, *PHP*, *Composer*, *Docker* 
 
 What can you do
 ----
