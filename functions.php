@@ -27,14 +27,14 @@ function sendmail($sub, $mb)
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'ismail.work.becode@gmail.com';           // SMTP username fausse adresse gmail
-        $mail->Password   = 'lalegende';                               // SMTP password
+        $mail->Username   = 'su.work.becode@gmail.com';           // SMTP username fausse adresse gmail
+        $mail->Password   = '123456AB';                               // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
         $mail->Port       = 587;                                    // TCP port to connect to
 
         //Recipients
         $mail->setFrom('dont-answer@becode.gmail', 'Admin');
-        $mail->addAddress('ismail.work.becode@gmail.com');     // Add a recipient
+        $mail->addAddress('su.work.becode@gmail.com');     // Add a recipient
         //$mail->addAddress('ellen@example.com');               // Name is optional
         //$mail->addReplyTo('ismail.work.becode@gmail.com');
         //$mail->addCC('cc@example.com');
@@ -51,7 +51,7 @@ function sendmail($sub, $mb)
 
 
         $mail->send();
-        echo 'Message has been sent';
+        echo '   Message has been sent';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
@@ -67,8 +67,8 @@ function sendmailtoclient($clmsg, $m)
         $mail->isSMTP();                                            // Send using SMTP
         $mail->Host       = 'smtp.gmail.com';                    // Set the SMTP server to send through
         $mail->SMTPAuth   = true;                                   // Enable SMTP authentication
-        $mail->Username   = 'ismail.work.becode@gmail.com';           // SMTP username fausse adresse gmail
-        $mail->Password   = 'lalegende';                               // SMTP password
+        $mail->Username   = 'su.work.becode@gmail.com';           // SMTP username fausse adresse gmail
+        $mail->Password   = '123456AB';                               // SMTP password
         $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;         // Enable TLS encryption; `PHPMailer::ENCRYPTION_SMTPS` also accepted
         $mail->Port       = 587;                                    // TCP port to connect to
 
@@ -76,7 +76,7 @@ function sendmailtoclient($clmsg, $m)
         $mail->setFrom('dont-answer@becode.gmail', 'Admin');
         $mail->addAddress($m, $m);     // Add a recipient
         //$mail->addAddress('ellen@example.com');               // Name is optional
-        $mail->addReplyTo('ismail.work.becode@gmail.com');
+        $mail->addReplyTo('su.work.becode@gmail.com');
         //$mail->addCC('cc@example.com');
         //$mail->addBCC('bcc@example.com');
 
@@ -91,7 +91,7 @@ function sendmailtoclient($clmsg, $m)
 
 
         $mail->send();
-        echo 'Message has been sent';
+        echo '';
     } catch (Exception $e) {
         echo "Message could not be sent. Mailer Error: {$mail->ErrorInfo}";
     }
