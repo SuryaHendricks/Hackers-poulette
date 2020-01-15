@@ -1,4 +1,4 @@
-# hackers-poulette
+# Hackers-poulette
 
 * *Version*: 1.0.0
 * *Authors*: Surya Hendricks
